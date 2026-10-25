@@ -1,0 +1,6 @@
+{
+  "name": "StudyMate – Exam Planner",
+  "description": "Smart Exam Study Planner & Reminder PWA for university examination preparation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

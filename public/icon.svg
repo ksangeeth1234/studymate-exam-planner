@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="bookGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f3e8ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#312e81" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <!-- Rounded Base Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  
+  <!-- Subtle decorative ring -->
+  <circle cx="256" cy="256" r="210" fill="none" stroke="#ffffff" stroke-width="4" stroke-opacity="0.15" stroke-dasharray="12 8"/>
+  
+  <g filter="url(#shadow)">
+    <!-- Graduation Cap / Book Fusion -->
+    <!-- Cap top rhombus -->
+    <polygon points="256,120 400,185 256,250 112,185" fill="#f8fafc"/>
+    <polygon points="256,120 400,185 256,192 112,185" fill="#e2e8f0" opacity="0.6"/>
+    
+    <!-- Cap skullcap base -->
+    <path d="M168,212 L168,280 C168,328 344,328 344,280 L344,212 Z" fill="#e0e7ff"/>
+    
+    <!-- Tassel -->
+    <path d="M370,198 C375,230 380,265 385,290" fill="none" stroke="#fbbf24" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="387" cy="298" r="10" fill="#f59e0b"/>
+    
+    <!-- Open Book Lower Part -->
+    <path d="M140,325 C190,305 240,315 256,330 C272,315 322,305 372,325 C372,390 322,370 256,388 C190,370 140,390 140,325 Z" fill="url(#bookGrad)"/>
+    
+    <!-- Central Divider -->
+    <path d="M256,330 L256,388" stroke="#a78bfa" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Clock / Timer badge in center -->
+    <circle cx="256" cy="235" r="42" fill="#7c3aed" stroke="#ffffff" stroke-width="6"/>
+    <!-- Clock hands at 3:00 / 8:00 (study times!) -->
+    <path d="M256,235 L256,212" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+    <path d="M256,235 L276,235" stroke="#38bdf8" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="256" cy="235" r="4" fill="#fbbf24"/>
+  </g>
+</svg>
